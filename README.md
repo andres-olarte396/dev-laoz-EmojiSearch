@@ -1,14 +1,14 @@
-# Herramientas
+# Buscador de Emojis
 
-## 1. Buscador de Emojis
+Esta herramienta permite buscar emojis mediante palabras clave o categorías. Carga los emojis desde un archivo JSON y los filtra en tiempo real.
 
-Un buscador que permite encontrar rápidamente emojis basados en palabras clave o categorías. Los emojis se cargan desde un archivo JSON que puedes modificar fácilmente para adaptarlo a tus necesidades.
+## Funcionalidades
 
-- **Cómo usar**: Escribe en el campo de búsqueda y verás los emojis filtrados que coincidan con tu búsqueda.
+- Busca emojis por descripción.
+- Carga los emojis desde un archivo JSON.
+- Muestra resultados en tiempo real a medida que escribes.
 
-## 2. Codificador/Decodificador Base64
+## Uso
 
-Esta herramienta te permite codificar texto en formato Base64 y decodificar texto que esté en este formato. Es muy útil cuando trabajas con datos binarios en aplicaciones web.
-
-- **Cómo usar**: Ingresa el texto que deseas codificar o decodificar, y utiliza los botones correspondientes para realizar la operación.
-- **Opciones**: También puedes copiar el resultado directamente al portapapeles usando el botón "Copiar Resultado".
+1. Escribe palabras clave en el campo de búsqueda.
+2. Los emojis que coincidan aparecerán automáticamente en la lista de resultados.
