@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
           filteredEmojis.forEach(emoji => {
             const card = document.createElement('div')
             card.classList.add('emoji-card')
+            card.classList.add('border')
 
             card.innerHTML = `<div class="card-name">${emoji.id}</div>
                             <div class="card-code">${emoji.code}</div>
