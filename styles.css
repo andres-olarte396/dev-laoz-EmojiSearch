@@ -6,7 +6,7 @@
 }
 
 .emoji-card {
-    background-color: #f1f1f1;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -28,5 +28,9 @@
 .emoji-card p {
     margin: 0;
     font-size: 1rem;
-    color: #333;
+}
+
+.emoji {
+    font-size: 60px;
+    margin-bottom: 10px;
 }
