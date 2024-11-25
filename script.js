@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             <div class="card-code">${emoji.code}</div>
                             <div class="emoji">${emoji.emoji}</div>
                             <div class="card-description">${emoji.description}</div>`
+            card.setAttribute('title', emoji.code);
+            card.onclick = () => copyCode(emoji.emoji);
             emojiResults.appendChild(card)
           })
         } else {
@@ -40,3 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Error al cargar el archivo JSON:', error)
     })
 })
+
+// Función para copiar al portapapeles
+function copyCode(code) {
+    navigator.clipboard?.writeText(code) // Verificar si el navegador soporta el API Clipboard
+      .then(() => {
+        alert(`Código copiado: ${code}`); // Mensaje de confirmación
+      })
+      .catch((err) => {
+        console.error("Error al copiar el texto: ", err);
+      });
+  }
