@@ -34,8 +34,7 @@ function renderEmojiResults(emojiResults, filteredEmojis) {
       card.classList.add("emoji-card");
       card.classList.add("border");
 
-      card.innerHTML = `<div class="card-name">${emoji.id}</div>
-                            <div class="card-code">${emoji.code}</div>
+      card.innerHTML = `<div class="card-code">${emoji.code}</div>
                             <div class="emoji">${emoji.emoji}</div>
                             <div class="card-description">${emoji.description}</div>`;
       card.setAttribute("title", emoji.code);
