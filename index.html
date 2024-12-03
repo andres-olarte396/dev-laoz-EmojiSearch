@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buscador de Emojis</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
-    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
-    <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <h1>Buscador de Emojis</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Emojis</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <header>
+    <img src="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" alt="Logo de la Compañía"
+      style="width: 50px; height: auto;" />
+    <h1>Buscador de Emojis</h1>
+  </header>
+  <main>
+    <div class="container">
       <p>
         Esta herramienta permite buscar emojis mediante palabras clave o
         categorías. Carga los emojis desde un archivo JSON y los filtra en
         tiempo real.
       </p>
-    </header>
-    <main>
-      <div class="container">
-        <input
-          type="search"
-          id="emojiSearch"
-          placeholder="Buscar emojis..."
-          autocomplete="off"
-        />
+      <div class="search-container">
+        <input type="search" id="emojiSearch" placeholder="Buscar emojis..." autocomplete="off" />
         <div id="emojiResults" class="emoji-cards"></div>
       </div>
-    </main>
-    
-    <footer>
-      <span>© 2024 Mi Negocio. Todos los derechos reservados.</span>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2024 Mi Negocio. Todos los derechos reservados.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
