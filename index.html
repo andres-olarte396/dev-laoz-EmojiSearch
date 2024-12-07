@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
   <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
   <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/utilities.css" />
   <link rel="icon" href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" type="image/x-icon" />
 </head>
 
@@ -17,6 +18,17 @@
     <img src="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png" alt="Logo de la Compañía"
       style="width: 50px; height: auto;" />
     <h1>Buscador de Emojis</h1>
+    <div class="search-container">
+      <input type="search" id="emojiSearch" placeholder="Buscar emojis..." autocomplete="off" />
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#">Index</a></li>
+        <li><a href="https://github.com/andres-olarte396">github</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <div class="container">
@@ -25,10 +37,7 @@
         categorías. Carga los emojis desde un archivo JSON y los filtra en
         tiempo real.
       </p>
-      <div class="search-container">
-        <input type="search" id="emojiSearch" placeholder="Buscar emojis..." autocomplete="off" />
-        <div id="emojiResults" class="emoji-cards"></div>
-      </div>
+      <div id="emojiResults" class="emoji-cards"></div>
     </div>
   </main>
 
